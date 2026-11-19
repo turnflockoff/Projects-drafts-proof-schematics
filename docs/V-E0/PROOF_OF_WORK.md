@@ -1,39 +1,36 @@
-# V-E0 — Proof of Work
+# V-E0 / OEV OMSOC — Proof of Work
 
-**Work date:** Not established from available evidence.
+**Work date:**  
+**Evidence basis:** 42-image archive recovered from project conversation (29 original hardware photographs, 13 generated engineering illustrations).
 
-## 1. Hypothesis / reasoning
-The photographed display/control electronics appear to contain multiple functional sections and labeled external interfaces. The working hypothesis is that the assembly may combine user-interface, low-voltage power, I/O, communications, and cellular/GPS-related functions. A separate ESP32-S3 dashboard concept may be feasible, but only after electrical, protocol, and mechanical interfaces are characterized.
+## Hypothesis / reasoning
+The photographed scooter display and electronics assembly may contain separable display, low-voltage I/O, communications, and power-distribution functions. A custom ESP32-S3 dashboard/interface board may be feasible if connector electrical characteristics, communications protocol, battery limits, and physical dimensions are measured first.
 
-## 2. What I did
-- Organized the available original hardware and document photographs.
-- Reviewed visible connector labels and PCB/module markings.
-- Recorded legible battery-label information.
-- Separated original evidence from generated engineering illustrations.
-- Prepared a neutral codename and independent-research description.
-- Documented the gaps between visual observations and validated engineering results.
+## What I did
+- Recovered and organized the 42 available project images.
+- Separated 29 original hardware photographs from 13 generated concept illustrations.
+- Visually reviewed contact sheets of the image set.
+- Documented each image by filename and its visible evidentiary value.
+- Preserved original filenames and the archive's SHA-256 manifest.
+- Distinguished observed hardware from generated diagrams and 3D concepts.
 
-## 3. How I did it
-This work is based on visual inspection of supplied photographs and documentation. Markings are transcribed only where legible. No undocumented pinout, voltage, protocol, or functional behavior is inferred from a label alone.
+## How I did it
+The evidence review used the supplied image files and visual inspection. Original photographs were grouped by hardware subject: display/enclosure, connector panel, main PCB, smaller module/interface PCB, component close-ups, and battery label. Generated illustrations were grouped separately as concept artwork. File hashes in the archive manifest provide a way to verify that transferred files are unchanged.
 
-## 4. What happened / observed result
-The prepared evidence set contains 43 unique original hardware/document photographs and 9 generated engineering-artwork images (52 images total). The photographs show a multi-board assembly, labeled connector panel, PCB markings, and a battery label.
+## What happened / observed result
+The image set contains 42 files:
+- 29 original photographs showing a scooter display/enclosure, multiple green PCBs, a nine-port colored connector panel, board/module details, and a battery label.
+- 13 generated technical illustrations including wiring-style diagrams, teardown posters, and replacement-board/enclosure concepts.
 
-Visible connector labels include USB DEBUG, BRAKE, THROTTLE, SPEAKER, LED, DATA, 5V OUTPUT, 12V OUTPUT, and FRONT LIGHT. Visible board/module markings include SL2550_N02, T670VC_MB_V1.02_PCB, and MeigLink SLM750 LTE.
+The battery label image appears to show 46.8 V, 15 Ah, and 702 Wh. The exact chemistry and cell configuration remain unconfirmed. Connector panel labels previously recorded include USB DEBUG, BRAKE, THROTTLE, SPEAKER, LED, DATA, 5V OUTPUT, 12V OUTPUT, and FRONT LIGHT; these are functional labels, not a measured pinout.
 
-The battery label appears to read 46.8 V, 15 Ah, and 702 Wh. Chemistry, cell configuration, maximum charge voltage, BMS limits, and connector polarity remain unverified.
+## What I would change
+1. Transfer all 42 image binaries into this repository, retaining the source filenames and the two evidence categories.
+2. Capture calibrated, square-on board photos with a ruler and connector close-ups.
+3. Record board dimensions, mounting-hole centers, connector pitch, and component heights.
+4. Measure connector voltages/polarity and identify signal direction/protocol with appropriate isolated test equipment.
+5. Confirm battery chemistry, series count, full-charge voltage, and BMS limits from manufacturer documentation.
+6. Replace conceptual PCB artwork with measured CAD and a reviewed KiCad schematic/layout only when supported by evidence.
 
-## 5. What I would change next
-1. Capture square-on, high-resolution board and connector photographs with a scale.
-2. Identify battery chemistry, series configuration, BMS model, and charge limits from reliable documentation.
-3. Measure enclosure, mounting, connector, and board geometry.
-4. Build a connector-by-connector measurement table using isolated, current-limited equipment and safe procedures.
-5. Passively capture and document serial traffic only where authorized and safe.
-6. Create a measured KiCad schematic/layout only after evidence supports it.
-7. Validate a low-voltage bench prototype independently, without throttle, brake, or traction-control connections.
-
-## Evidence limits
-This records visual inspection and documentation. It does not claim a decoded protocol, verified pinout, working replacement dashboard, fabricated PCB, successful bench test, or vehicle integration.
-
-## Artwork disclaimer
-Generated diagrams and 3D renders are conceptual illustrations only. They are not measured CAD models, verified schematics, manufacturing-ready PCB files, Gerbers, or fabrication instructions. Dimensions and component placements are placeholders unless explicitly measured.
+## Result limitations
+This work is an image inventory and visual evidence review. It is not proof of decoded firmware, a verified connector pinout, a working replacement controller, a fabricated PCB, or a successful powered scooter test. Generated artwork is illustrative and must not be used as an electrical or mechanical manufacturing reference.
