@@ -1,0 +1,2 @@
+chmod +x publish_v_e0_to_github.sh
+./publish_v_e0_to_github.sh /path/to/V-E0_Rideshare_Project_Complete_Collection.zip
